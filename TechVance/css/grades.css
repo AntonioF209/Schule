@@ -1,0 +1,164 @@
+body {
+    background-color: #2b2a2f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header, footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #1c1b20;
+    color: #fff;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    main {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+    grid-template-columns: 1fr;
+    }
+}
+
+.dateBro,
+.gradeMaster,
+.studyBuddy,
+.careerPilot,
+.studyMate,
+.noteCraft {
+    background-color: #f2f2f2;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.dateBro img,
+.gradeMaster img,
+.studyBuddy img,
+.careerPilot img,
+.studyMate img,
+.noteCraft img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.dateBro h2,
+.gradeMaster h2,
+.studyBuddy h2,
+.careerPilot h2,
+.studyMate h2,
+.noteCraft h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.dateBro p,
+.gradeMaster p,
+.studyBuddy p,
+.careerPilot p,
+.studyMate p,
+.noteCraft p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.dateBro button,
+.gradeMaster button,
+.studyBuddy button,
+.careerPilot button,
+.studyMate button,
+.noteCraft button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.dateBro button,
+.gradeMaster button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.gradeMaster button,
+.studyBuddy button {
+    background-color: #92E3A9;
+    color: #fff;
+}
+
+.studyBuddy button,
+.careerPilot button {
+    background-color: #7E57C2;
+    color: #fff;
+}
+
+.careerPilot button,
+.studyMate button {
+    background-color: #FFC100;
+    color: #fff;
+}
+
+.studyMate button,
+.noteCraft button {
+    background-color: #FFB891;
+    color: #fff;
+}
+
+.noteCraft button {
+    background-color: #CE6E6E;
+    color: #fff;
+}
+
+.dateBro button:hover {
+    background-color: #0056b3;
+}
+
+.gradeMaster button:hover {
+    background-color: #83c596;
+}
+
+.studyBuddy button:hover {
+    background-color: #6239a8;
+}
+
+.careerPilot button:hover {
+    background-color: #d3a51c;
+}
+
+.studyMate button:hover {
+    background-color: #e69367;
+}
+
+.noteCraft button:hover {
+    background-color: #c74f4f;
+}
